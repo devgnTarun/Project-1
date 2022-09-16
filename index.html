@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Earn 1000 Instantly</title>
+</head>
+<body>
+
+   
+    <nav class="head-nav">
+        <h1 class="logo my-3">Paisa<span class="h1-span" style="color: rgb(255, 174, 0); ">Kamao </span> </h1>
+
+        <ul class="nav-ui my-3">
+          <i id="fa-1" class="fa fa-times" onclick="hideMenu()"></i>
+          <br>
+          <li class="nav-li"><a href="#home"> Home</a></li>
+          <li class="nav-li" id="drop-hover">
+            <a href="#about"> About Us  <i class="fa fa-caret-down"></i> </a>
+
+        
+          </li>
+          <li class="nav-li"><a href="#refer"> Refer and Earn</a></li>
+          <li class="nav-li" onclick="showLog()"><a style="cursor: pointer;"> Login</a></li>
+          
+        </ul>
+        <i id="fa-2" class="fa fa-chevron-circle-down" onclick="showMenu()" ></i>
+      </nav>
+
+      <div class="background" id="home">
+
+        <div class="content">
+                <h1 class="my-3">Earn money Instantly</h1>
+                <p>Register , Get Verified and earn every month $15 for free. Know about our procedure. </p>
+                <button  class="btn btn-warning my-3">Know More</button>
+        </div>  
+
+          <div class="main-cont">  <img src="7121.jpg" alt="" srcset=""></div>
+
+
+       </div>
+
+       <section class="about" id="about">
+        <h1 class="text-dark my-3">About us</h1>
+        <div class="abt-card mt-4" style="z-index : 1;">
+            <div class="img-abt">
+            <img class="card-img " src='paisahipaisahoga.jpg' alt="" />
+            </div>
+            <div class="card-mat">
+                <h3>Developer Team</h3>
+                <p> We are a developer team who work together on projects and every developer is good at their skill and this helps us to work efficiently on projects. This is the reason you shoud choose us because every person have their experience and they create some new ideas and it must be good client relation.</p>
+            <button class="btn btn-warning  ms-3 mb-3 ">Checkout Team</button>
+            </div>
+        </div>
+        <div class="abt-card mt-4" id="reverse-card" style="z-index : 1;">
+            <div class="img-abt">
+            <img class="card-img " src='paisahipaisahoga.jpg' alt="" />
+            </div>
+            <div class="card-mat">
+                <h3>Developer Team</h3>
+                <p> We are a developer team who work together on projects and every developer is good at their skill and this helps us to work efficiently on projects. This is the reason you shoud choose us because every person have their experience and they create some new ideas and it must be good client relation.</p>
+            <button class="btn btn-warning  ms-3 mb-3 ">Checkout Team</button>
+            </div>
+        </div>
+       </section>
+
+
+
+       <div class="login-box" id="logBox">
+      <div class="log-top my-3">  <h3>Login Now</h3> <i class="fa fa-times" onclick="hideLog()"></i></div>
+        <form>
+            
+            Email Id / Username: <input   type="email">
+            Password : <input type="password">
+            <button type="submit" class="btn btn-warning d-block w-100 text-light my-2">Login</button>
+
+         <a class="forgot" href="/">Forgot Your Password ? </a>
+
+
+         <p class="dont-have" onclick="create()"> Don't have account <a style="cursor: pointer ;color: purple; text-decoration: underline;">Sign Up</a> </p>  
+        </form>
+       </div>
+
+
+
+
+       <div class="regi-box" id="regBox">
+      <div class="reg-top">  <h3> Register Now</h3>  <i class="fa fa-times" onclick="hidereg()"></i></div>
+        <div class="alert" id="alert">
+          <button type="button" class="btn btn-warning w-100 text-light">
+            Scroll to Register properly!  
+          </button>
+         </div>
+        <form class="regi-form">
+            
+            Name : <input   type="text">
+            Age : <input   type="text">
+            
+            Email Id : <input   type="email">
+            Phone no. : <input type="tel">
+            Set Password : <input type="password">
+            Confirm Password : <input type="password">
+            Refer Code : (Optional) <input  placeholder="(Optional)"   type="text">
+            <button type="submit" class="btn btn-warning w-100 d-block text-light my-3">Register</button>
+
+         
+
+
+         <p class="" onclick="alreadyAc()">Already have account <a style="cursor: pointer ; color: purple; text-decoration: underline;">Login</a> </p>  
+        </form>
+       </div>
+
+      
+
+
+       
+        <!-- Refer box  -->
+
+        <div class="refer-box py-5" id="refer">
+          <h3 class="mb-4">Refer And Earn</h3>
+          <div class="refer-card">
+            <div class="refer-img">
+              <img src="refer.jpg" alt="">
+            </div>
+            <div class="refer-input ">
+              <div class="text my-3">
+              <h2>Add refer code</h2>
+              <p>Add you freind unique refer code ans share more and earn money easily with full genuine website.</p>
+            </div>
+              <input placeholder="(Paisa Kamao Bosdike)" class="my-3"type="text">
+            </div>
+          </div>
+        </div>
+       
+       
+       
+       
+
+
+
+      <footer class="footer-sec">
+        <div class="foot-container">
+      
+          <div class="foot-row">
+            <h3>Our Organistation</h3>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact us</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">More info</a></li>
+            </ul>
+          </div>
+          <div class="foot-row">
+            <h3>Get Help</h3>
+            <ul>
+              <li><a href="">Are you teacher?</a></li>
+              <li><a href="">New admission?</a></li>
+              <li><a href="">How to pay fee?</a></li>
+              <li><a href="">Call us</a></li>
+            </ul>
+          </div>
+          <div class="foot-row">
+            <h3>Follow Us</h3>
+            <div class="social-i">
+              
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          
+          
+        </div>
+      </footer>
+      
+      
+      <script src="MyJs.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      
+    </body>
+</html>
